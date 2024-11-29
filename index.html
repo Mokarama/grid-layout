@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)  );
+            gap: 3px;
+            grid-auto-flow: dense;
+        }
+
+.container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.horizontal{
+    grid-column: auto / span 2;
+}
+.verticle{
+    grid-row: auto / span 2;
+}
+ 
+.big{
+    grid-column: auto / span 2;
+    grid-row:  auto / span 2;
+}
+.normal{
+    grid-column: auto / span 2;
+    /* grid-row:  auto / span 2; */
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="big"><img src="./images/big1.jpg" alt=""></div>
+
+        <div class="horizontal"><img src="./images/hori-1.jpg" alt=""> </div>
+        <div class="horizontal"><img src="./images/hori-2.jpg" alt=""> </div>
+        <div class="horizontal"><img src="./images/hori-3.jpg" alt=""> </div>
+
+        <div class="verticle"><img src="./images/ver-1.jpg" alt=""> </div>
+        <div class="verticle"><img src="./images/var-2.jpg" alt=""> </div>
+        <div class="verticle"><img src="./images/var-3.jpg" alt=""> </div>
+
+        <div class="horizontal"><img src="./images/hori-4.jpg" alt=""> </div>
+        <div class="horizontal"><img src="./images/hori-5.jpg" alt=""> </div>
+        <div class="horizontal"><img src="./images/hori-6.jpg" alt=""> </div>
+        <div class="horizontal"><img src="./images/hori-7.jpg" alt=""> </div>
+
+        <div class="normal"><img src="./images/normal-1.jpg" alt=""> </div>
+        <div class="normal"><img src="./images/normal-4.jpg" alt=""> </div>
+
+        <div class="big"><img src="./images/big-3.jpg" alt=""> </div>
+        <div class="big"><img src="./images/big-5.jpg" alt=""> </div>
+
+        <div class="normal"><img src="./images/normal-2.jpg" alt=""> </div>
+        <div class="normal"><img src="./images/normal-3.jpg" alt=""> </div>
+        <div class="normal"><img src="./images/normal-5.jpg" alt=""> </div>
+
+        <div class="verticle"><img src="./images/var-4.jpg" alt=""> </div>
+        <div class="verticle"><img src="./images/var-5.jpg" alt=""> </div>
+        <div class="verticle"><img src="./images/img1.jpg" alt=""> </div>
+
+
+    </div>
+</body>
+</html>
